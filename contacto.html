@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+         <!-- icono pagina -->
+         <link rel="icon" type="imgage/x-icon" href="/img/iconos/iconos-barber.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja"> <!--etiqueta para crear bloques-->
+                <h1><img src="./img/productos/logo.png" alt="Logo de la barbería Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>  <!--a href: para referirnos a los vinculos o links-->
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="https://co.pinterest.com/pistonbarber/catalogo-de-cortes/">Catálogo</a></li>
+                        <li><a href="https://feelingperu.com/mejores-barberias-en-lima">Otras barberías</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <form>
+
+                <img class="imgContacto" src="./img/contacto.jpg" alt="Imagen para apartado de contactos.">
+
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required placeholder="Hola, quiero dejarles un mensaje..."></textarea>
+
+                <!---->
+                <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                <fieldset>
+                    <p class="test" id="test"></p>
+                    <!--<p class="test" id="test" style="¿Cómo lo contacatamos?"></p>-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+
+                    <label for="radio-facebook"><input type="radio" name="contacto" value="facebook" id="radio-facebook">Facebook</label>
+                    
+                </fieldset>
+                <!---->
+                <fieldset>
+                    <legend>¿En qué horario prefiere ser atendido?</legend>
+                        <select class="options">
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                            <option>Noche</option>
+                        </select>
+                </fieldset>
+
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la barbería?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+
+
+            <table>
+                <thead>                 <!--Encabezado (haciendo las tablas)-->
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td>Lunes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </main>
+        <footer>
+            <a href="https://github.com/Jsckbe" target="_blank">
+                <img src="./img/iconos/icon-GitHub.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/jack-bonzano/" target="_blank">
+                <img src="/img/iconos/icon-LinkedIn.svg" alt="Linkedin">
+            </a>
+            <p class="copyright">&copy Copyright Barbería - 2023</p>
+            <hr>
+        </footer>
+    </body>
+</html>

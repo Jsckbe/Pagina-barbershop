@@ -1,0 +1,358 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.caja li a:hover{
+    opacity: 0.3;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #c78a12;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%; /*Se añade un espacio externo entre los lados de los productos listados*/ 
+    padding: 30px 20px;
+    box-sizing: border-box;       /*bordes no van a sobrepasar el 30% de width*/
+    border: 2px solid #000000;  /*border-color: #000000;
+                                    border-width: 2px;
+                                    border-style: solid;*/
+    
+    border-radius: 10px;
+    /*
+    border-radius: 10px 25px 40px 50px; //inicia en borde superior izq. en sentido horario*/
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 50px;
+    */    
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;  /*margin-top: para separar con 10pixeles de la descripción*/
+}
+
+footer{
+    text-align: center;
+    /*background: url(/img/productos/bg.jpg);*/
+    background: url(../img/productos/bg.jpg);
+    padding: 40px; /*espaciamiento interno*/
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size:13px;
+    margin: 20px;
+}
+
+/*Contacto*/
+.imgContacto{
+    width: 15%;
+    height: 15%;
+    float: right;
+    margin: 50px 120px 20px 0;
+    /*padding: 1em;*/
+}
+.imgContacto:hover{
+    opacity: 0.5;
+}
+
+
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 50px;  /*top right buttom left (sentido horario)*/
+
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px 50px;
+    padding: 10px 25px;
+    width: 50%;
+    
+}
+
+.checkbox{
+    margin: 20px 0 20px 50px;   
+}
+
+.options{
+    font-size: 15px;
+    font-weight:normal;
+    margin: 10px 0 10px 50px;
+    padding: 1em;
+}
+
+/*
+p{
+    color:red;
+}
+
+form p{
+    color:blue;
+}
+
+.test{
+    color: yellow;
+}
+
+p.test{
+    color: orange;
+}
+*/
+
+.enviar{
+    width: 30%;
+    margin: 0 0 10px 100px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); 
+}
+
+table{
+    margin: 40px 0 40px 50px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px; /* 8px en superior e inferior, y 15px en los costados*/
+}
+
+/*Aquí inicia el CSS para nuestra home*/
+.banner{
+    width: 100%;
+    
+}
+/*main > p{
+    background: red; //elemento > hijo
+}  
+img + p{
+    background: yellow;
+}
+main ~ p{
+    background: green;
+}
+.principal p:not(#mision){
+    background: orange;
+}
+*/
+
+.principal{
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em; /*espaciados*/
+    clear: left;
+    /*color: rgba(0,0,0.3)*/
+    text-shadow: 2px 2px 10px red;
+}
+
+/*
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+.titulo-principal:before{
+    content: "[";
+}
+.titulo-principal:after{
+    content: "]";
+}
+p:first-line{
+    font-style: italic;
+}
+*/
+
+.principal p{ 
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.utensilios:hover{
+    opacity: 0.3;
+}
+
+.mapa{
+    padding: 3em 0; /*3em: 3 veces el tamaño de la fuente que esta configurado por defecto*/
+    background: radial-gradient(#FEFEFE, #88888888)/*(90deg,orange,blue, black, cyan 30%, white);*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #88888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+
+.items:before{
+    content: "🟉";
+}
+
+/*.items:nth-child(3){
+    font-weight: bold;
+}*/
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px #000000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+/*trabajar con condiciones*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
+

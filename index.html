@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!--Indica la version 5 de HTML que usaremos-->
+
+<html lang="es">
+
+    <head>  <!--Etiquetas informativas-->
+        <meta charset="UTF-8"> <!--Para definir el diccionario-->
+        <meta name="viewport" content="width=device-width">
+        <title>BarberShop</title>
+        <!-- icono pagina -->
+        <link rel="icon" type="imgage/x-icon" href="/img/iconos/iconos-barber.png">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css"> <!--etiqueta de referencia para css-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+  
+    <body>
+        <header>
+            <div class="caja"> <!--etiqueta para crear bloques-->
+                <h1><img src="/img/productos/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>  <!--a href: para referirnos a los vinculos o links-->
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="https://co.pinterest.com/pistonbarber/catalogo-de-cortes/">Catálogo</a></li>
+                        <li><a href="https://feelingperu.com/mejores-barberias-en-lima">Otras barberías</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div>
+            <img class="banner" src="img/img-banner.jpg"> <!--identar (id) para llamar y usarlo una vez en style.css-->
+        </div>
+
+       <main>
+            <section class="principal">
+                <h2 class="titulo-principal">--Sobre Nuestra BarberShop--</h2>
+
+                <img class="utensilios" src="img/productos/utensilios.png" alt="Utensilios de un barbero.">
+
+                <p>Ubicada en el corazón de la ciudad, <strong>BarberShop</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, BarberShop ya es destacable en la ciudad y conquista nuevos clientes diariamente.</p>
+            
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar buenas experiencias y brindar servicios de calidad a nuestros clientes".</strong></em></p>
+                
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+            </section>
+            
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra ubicación</h3>
+                <p>Nuestros establecimientos están ubicados en el centro de la ciudad</p>
+
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3656.449840474902!2d-46.63452058466291!3d-23.588194784669483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1676593753216!5m2!1ses!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </section>
+            
+
+            <section class="diferenciales"> <!--Una class permite reutilizar ese estilo-->
+                <h3 class="titulo-principal">Diferenciales</h3>
+
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">    <!--untable list-->
+                        <li class="items">Buena Atención personalizada a los clientes</li>
+                        <li class="items">Espacios amplios y cómodos</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Buen ambiente</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="img/diferenciales.jpg" class="imagen-diferenciales">
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+       
+    <footer>
+        <a href="https://github.com/Jsckbe" target="_blank">
+            <img src="./img/iconos/icon-GitHub.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/jack-bonzano/" target="_blank">
+            <img src="/img/iconos/icon-LinkedIn.svg" alt="Linkedin">
+        </a>
+        <p class="copyright">&copy Copyright Barbería - 2023</p>
+        <hr>
+    </footer>
+
+    </body>
+</html>
+
+
